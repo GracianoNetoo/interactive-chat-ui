@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f0e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.chat-container{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    height: 80vh;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header{
+    background-color: #3e2723;
+    color: #f8f4f0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.chat-body{
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.bot-message{
+    background-color: #d7b377;
+    color: #3e2723;
+    max-width: 70%;
+    padding: 10px 15px;
+    align-self: flex-start;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 15px;
+    line-height: 1.4;
+}
+
+.usermessage {
+    background-color: #6f4e37;
+    color: #f8f4f0;
+    align-self: flex-end;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    border-radius: 15px;
+    line-height: 1.4;
+    display: flex;
+}
+
+.chat-input-area{
+    display: flex;
+    border-top: 1px solid #bca98f;
+    padding: 10px;
+    background-color: #3e2723;
+    padding: 0.8rem;
+    gap: 0.5rem;
+}
+
+.chat-input-area input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.chat-input-area button{
+    background-color: #c49b66;
+    color: #3e2723;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.chat-input-area button:hover{
+    background-color: #d7b377;
+}
+
